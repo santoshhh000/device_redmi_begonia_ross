@@ -304,25 +304,25 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libshim_vtservice
 
+# DV4A
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/dolby/lib/soundfx/libdseffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdseffect.so \
+	$(LOCAL_PATH)/dolby/lib/soundfx/libv4a_fx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libv4a_fx.so \
+	$(LOCAL_PATH)/dolby/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
+	$(LOCAL_PATH)/dolby/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
+	$(LOCAL_PATH)/dolby/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
+	$(LOCAL_PATH)/dolby/etc/permissions/android.dolby.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.dolby.xml \
+	$(LOCAL_PATH)/dolby/etc/ds1-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ds1-default.xml
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
 
-<<<<<<< HEAD
-=======
-# Video Telephony
-PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.videotelephony@1.0
-
-# MediaTek IMS
-$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
-
 # XiaomiParts
 PRODUCT_PACKAGES += \
      XiaomiParts
 
->>>>>>> f0acdaf... begonia: Xiaomi Parts
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)

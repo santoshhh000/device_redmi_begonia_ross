@@ -28,10 +28,12 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from our custom product configuration
+<<<<<<< HEAD:arrow_begonia.mk
 TARGET_FACE_UNLOCK_SUPPORT := true
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/dolby/config.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia

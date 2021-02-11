@@ -212,6 +212,7 @@ PRODUCT_PACKAGES += \
     init.mt6785.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
+    init.xiaomi_parts.rc \
     fstab.mt6785 \
     ueventd.mt6785.rc
 
@@ -309,5 +310,19 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+<<<<<<< HEAD
+=======
+# Video Telephony
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.videotelephony@1.0
+
+# MediaTek IMS
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+     XiaomiParts
+
+>>>>>>> f0acdaf... begonia: Xiaomi Parts
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)

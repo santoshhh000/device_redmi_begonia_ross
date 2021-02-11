@@ -2,6 +2,11 @@ import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6785.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
+<<<<<<< HEAD
+=======
+import /vendor/etc/init/hw/init.stnfc.rc
+import /system/etc/init/hw/init.stnfc.rc
+import /vendor/etc/init/hw/init.xiaomi_parts.rc
 import /vendor/etc/init/hw/init.modem.rc
 
 on early-init

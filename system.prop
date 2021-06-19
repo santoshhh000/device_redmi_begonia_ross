@@ -145,3 +145,4 @@ ro.sf.blurs_are_expensive=1
 
 # GBoard
 ro.com.google.ime.kb_pad_port_b=1
+ro.com.google.ime.corner_key_r=35

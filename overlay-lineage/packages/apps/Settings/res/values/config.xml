@@ -16,4 +16,7 @@
     <!-- Smart Charging enable -->
     <bool name="config_supportSmartCharging">true</bool>
 
+    <!-- Smart Cutoff -->
+    <bool name="config_deviceSupportSmartCutoff">true</bool>
+
 </resources>

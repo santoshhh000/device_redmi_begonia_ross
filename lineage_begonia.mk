@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2021 Potato Open Sauce Project
+# Copyright (C) 2019-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,12 +29,21 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 #official
 HYCON_BUILD_TYPE=OFFICIAL
 
+#Sakura Flag
+SAKURA_OFFICIAL := true
+SAKURA_MAINTAINER := abhixv
+SAKURA_BUILD_TYPE := basicgapps
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORT := true
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := aosp_begonia
+PRODUCT_NAME := lineage_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi

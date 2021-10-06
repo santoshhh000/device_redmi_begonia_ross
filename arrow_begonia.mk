@@ -31,11 +31,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORT := true
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/wave/configs/common.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := wave_begonia
+PRODUCT_NAME := arrow_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi

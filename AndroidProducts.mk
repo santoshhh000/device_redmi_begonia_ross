@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/wave_begonia.mk
+    $(LOCAL_DIR)/arrow_begonia.mk

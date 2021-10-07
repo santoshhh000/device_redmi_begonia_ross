@@ -28,7 +28,6 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from our custom product configuration
-<<<<<<< HEAD:arrow_begonia.mk
 TARGET_FACE_UNLOCK_SUPPORT := true
 
 # Inherit from our custom product configuration

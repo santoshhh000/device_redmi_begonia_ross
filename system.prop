@@ -147,4 +147,5 @@ persist.device.config.runtime_native.uasp_pool_enabled=true
 
 #dolby 
 sys.keep_app_1=com.dolby.ds1appUI
+spectrum.support=1
 

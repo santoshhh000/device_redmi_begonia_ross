@@ -29,9 +29,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from our custom product configuration
 TARGET_FACE_UNLOCK_SUPPORT := true
-
 ARROW_GAPPS := true
-# Inherit from our custom product configuration
+#.. Inherit from our custom product configuration
 $(call inherit-product, vendor/arrow/config/common.mk)
 $(call inherit-product, vendor/dolby/config.mk)
 

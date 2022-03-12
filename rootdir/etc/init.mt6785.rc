@@ -978,7 +978,7 @@ on property:persist.sys.begonia.dt2w=1
 
 on boot
     # SELinux
-    write /sys/fs/selinux/enforce 1
+    write /sys/fs/selinux/enforce 0
 
     # Disable serial console
     stop console

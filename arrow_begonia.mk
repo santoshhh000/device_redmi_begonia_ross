@@ -33,7 +33,6 @@ TARGET_FACE_UNLOCK_SUPPORT := true
 #.. Inherit from our custom product configuration
 $(call inherit-product, vendor/arrow/config/common.mk)
 $(call inherit-product, vendor/dolby/config.mk)
-$(call inherit-product, vendor/ANXCamera/config.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
